@@ -15,7 +15,7 @@ import org.junit.Test
  * Please also check out the ui test
  * @see ru.easycode.zerotoheroandroidtdd.Task017Test
  */
-class MainViewModelTest {
+    class MainViewModelTest {
 
     @OptIn(ExperimentalCoroutinesApi::class)
     @Before
@@ -34,7 +34,7 @@ class MainViewModelTest {
     private lateinit var liveDataWrapper: FakeLiveDataWrapper
     private lateinit var viewModel: MainViewModel
 
-    fun initialize() {
+    private fun initialize() {
         repository = FakeRepository.Base()
         liveDataWrapper = FakeLiveDataWrapper.Base()
         viewModel = MainViewModel(
