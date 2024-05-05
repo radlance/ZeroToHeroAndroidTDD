@@ -3,7 +3,7 @@ package ru.easycode.zerotoheroandroidtdd
 import androidx.lifecycle.LiveData
 import org.junit.Assert.assertEquals
 
-interface FakeLiveDataWrapper : LiveDataWrapper.Mutable {
+interface FakeLiveDataWrapper : LiveDataWrapper.Mutable, LiveDataWrapper {
 
     fun checkUpdateCalls(expected: List<UiState>)
 
